@@ -11,3 +11,4 @@ adafruit_miniqr
 neopixel
 simpleio
 adafruit_lis3dh
+adafruit_progressbar
