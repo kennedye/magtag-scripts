@@ -9,9 +9,9 @@ import adafruit_requests
 # Get our username, key and desired timezone
 ssid = os.getenv("CIRCUITPY_WIFI_SSID")
 password = os.getenv("CIRCUITPY_WIFI_PASSWORD")
-aio_username = os.getenv("CIRCUITPY_AIO_USERNAME")
-aio_key = os.getenv("CIRCUITPY_AIO_KEY")
-timezone = os.getenv("CIRCUITPY_TIMEZONE")
+aio_username = os.getenv("ADAFRUIT_AIO_USERNAME")
+aio_key = os.getenv("ADAFRUIT_AIO_KEY")
+timezone = os.getenv("TIMEZONE")
 TIME_URL = f"https://io.adafruit.com/api/v2/{aio_username}/integrations/time/strftime?x-aio-key={aio_key}&tz={timezone}"
 TIME_URL += "&fmt=%25Y-%25m-%25d+%25H%3A%25M%3A%25S.%25L+%25j+%25u+%25z+%25Z"
 
